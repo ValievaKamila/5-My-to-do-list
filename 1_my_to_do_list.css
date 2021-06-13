@@ -1,0 +1,55 @@
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+body {
+    margin-left: 30px;
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+ul {
+    width: 450px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+li {
+    padding: 10px 10px 10px 14px;
+}
+
+del {
+    text-decoration: line-through;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+ul li::before { 
+    content: url(icons/unchecked_16.png);
+    padding: 0 20px 0 28px;
+}
+
+ul li.done::before { 
+    content: url(icons/checked_16.png);
+}
+
+ul li::after { 
+    content: '\2A2F';
+    padding-left: 20px;
+    color: #8c1100;
+}
+
+li:nth-child(odd) {
+    background-color: #a5ccda;
+}
+
+li:nth-child(even) {
+    background-color: #add8e6;
+}    
+
+li.color_ly {
+    background-color: #e2e2e2;
+}
